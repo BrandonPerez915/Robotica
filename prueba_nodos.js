@@ -48,7 +48,7 @@ function generateBoard(height, width) {
   return board
 }
 
-// console.log(generateBoard(5,5))
+console.log(generateBoard(5,5))
 
 function generateBoardNeighbors(board, height, width) {
   for(let i = 0; i < height; i++) {
@@ -80,13 +80,13 @@ function generateBoardNeighbors(board, height, width) {
   return board
 }
 
-const finalBoard = generateBoardNeighbors(generateBoard(5,5),5,5)
+// const finalBoard = generateBoardNeighbors(generateBoard(5,5),5,5)
 
-finalBoard[1][2].value = 'Rojo'
-finalBoard[0][2].disconnectNode(finalBoard[1][2])
+// finalBoard[1][2].value = 'Rojo'
+// finalBoard[0][2].disconnectNode(finalBoard[1][2])
 
-for(let i = 0; i < 5; i++) {
-  for(let j = 0; j < 5; j++) {
-    console.log(finalBoard[i][j].getData())
-  }
-}
+// for(let i = 0; i < 5; i++) {
+//   for(let j = 0; j < 5; j++) {
+//     console.log(finalBoard[i][j].getData())
+//   }
+// }
